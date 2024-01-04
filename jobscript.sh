@@ -12,6 +12,7 @@
 #SBATCH --mail-user=vihps01
 #SBATCH --mail-type=NONE
 
+conda init
 conda activate /scratch/vihps/vihps01/env/
 
 srun python3 /home/vihps/vihps01/dlcv-test-project/run.py

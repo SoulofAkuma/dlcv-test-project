@@ -9,7 +9,7 @@ RESULTS_PATH = '/scratch/vihps/vihps01/results'
 
 job_index = os.environ['SLURM_PROCID']
 config = None
-with open(CONFIG_PATH, 'r') as file:
+with open(os.path.join(CONFIG_PATH, f'config_{job_index}.json'), 'r') as file:
     config = json.load(file)
 
 device_count = torch.cuda.device_count()
