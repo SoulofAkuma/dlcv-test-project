@@ -1,3 +1,5 @@
+#!/bin/bash -l
+
 #SBATCH --job-name=DLCV-Test-Project-7715464
 #SBATCH --output=/scratch/vihps/vihps01/stdouts/%j.out
 #SBATCH --error=/scratch/vihps/vihps01/stderrs/%j.err
