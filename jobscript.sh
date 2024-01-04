@@ -10,9 +10,9 @@
 #SBATCH --mem=0
 #SBATCH --gres=gpu:8
 #SBATCH --time=02:00:00
-#SBATCH --mail-user=s1360517@stud.uni-frankfurt.de
+#SBATCH --mail-user=vihps01
 #SBATCH --mail-type=ALL
 
 conda activate /scratch/vihps/vihps01/env/
 
-srun run.py
+srun /home/vihps/vihps01/dlcv-test-project/run.py
