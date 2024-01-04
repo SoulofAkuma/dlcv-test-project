@@ -24,7 +24,7 @@ results = {
     'config': config,
     'accuracies_by_epoch': accuracies,
     'durations_by_epoch': durations,
-    'training_duration': time.time() - train_start()
+    'training_duration': time.time() - train_start
 }
 
 os.makedirs(RESULTS_PATH, exist_ok=True)
