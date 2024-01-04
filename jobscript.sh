@@ -10,8 +10,8 @@
 #SBATCH --gres=gpu:8
 #SBATCH --time=02:00:00
 #SBATCH --mail-user=vihps01
-#SBATCH --mail-type=ALL
+#SBATCH --mail-type=NONE
 
 conda activate /scratch/vihps/vihps01/env/
 
-srun /home/vihps/vihps01/dlcv-test-project/run.py
+srun python3 /home/vihps/vihps01/dlcv-test-project/run.py
