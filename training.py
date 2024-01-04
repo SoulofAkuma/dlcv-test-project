@@ -13,8 +13,8 @@ def train(device, batch_size, patch_size, embedding_dim,
         T.Normalize((0.5,), (0.5,),)
     ])
 
-    train_set = FashionMNIST(root=dataset_root, download=True, train=True, transform=transform)
-    test_set = FashionMNIST(root=dataset_root, download=True, train=False, transform=transform)
+    train_set = FashionMNIST(root=dataset_root, download=False, train=True, transform=transform)
+    test_set = FashionMNIST(root=dataset_root, download=False, train=False, transform=transform)
 
     train_loader = DataLoader(train_set, batch_size=batch_size, shuffle=True)
     test_loader = DataLoader(test_set, batch_size=batch_size, shuffle=False)
