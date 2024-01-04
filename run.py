@@ -13,7 +13,7 @@ with open(os.path.join(CONFIG_PATH, f'config_{job_index}.json'), 'r') as file:
     config = json.load(file)
 
 device_count = torch.cuda.device_count()
-device = torch.device(f'cuda{job_index % device_count}'
+device = torch.device(f'cuda{int(job_index) % device_count}'
                       if torch.cuda.is_available() else 'cpu')
 
 train_start = time.time()
